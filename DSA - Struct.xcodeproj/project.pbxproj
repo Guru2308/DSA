@@ -7,10 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA82C7A42A52928600FEE665 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA82C7A32A52928600FEE665 /* main.cpp */; };
+		CA82C7AD2A5292ED00FEE665 /* struct.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CA82C7AB2A5292ED00FEE665 /* struct.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		CA5DC9012A5295F2001DC3D8 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		CA82C79E2A52928600FEE665 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -23,11 +32,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CA5DC9032A5295F2001DC3D8 /* pointer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pointer; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA82C7A02A52928600FEE665 /* DSA - Struct */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "DSA - Struct"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA82C7A32A52928600FEE665 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		CA82C7AB2A5292ED00FEE665 /* struct.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = struct.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CA5DC9002A5295F2001DC3D8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA82C79D2A52928600FEE665 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -41,7 +58,7 @@
 		CA82C7972A52928600FEE665 = {
 			isa = PBXGroup;
 			children = (
-				CA82C7A22A52928600FEE665 /* DSA - Struct */,
+				CA82C7AB2A5292ED00FEE665 /* struct.cpp */,
 				CA82C7A12A52928600FEE665 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,21 +67,31 @@
 			isa = PBXGroup;
 			children = (
 				CA82C7A02A52928600FEE665 /* DSA - Struct */,
+				CA5DC9032A5295F2001DC3D8 /* pointer */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		CA82C7A22A52928600FEE665 /* DSA - Struct */ = {
-			isa = PBXGroup;
-			children = (
-				CA82C7A32A52928600FEE665 /* main.cpp */,
-			);
-			path = "DSA - Struct";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CA5DC9022A5295F2001DC3D8 /* pointer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA5DC9072A5295F2001DC3D8 /* Build configuration list for PBXNativeTarget "pointer" */;
+			buildPhases = (
+				CA5DC8FF2A5295F2001DC3D8 /* Sources */,
+				CA5DC9002A5295F2001DC3D8 /* Frameworks */,
+				CA5DC9012A5295F2001DC3D8 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pointer;
+			productName = pointer;
+			productReference = CA5DC9032A5295F2001DC3D8 /* pointer */;
+			productType = "com.apple.product-type.tool";
+		};
 		CA82C79F2A52928600FEE665 /* DSA - Struct */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CA82C7A72A52928600FEE665 /* Build configuration list for PBXNativeTarget "DSA - Struct" */;
@@ -91,6 +118,9 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
+					CA5DC9022A5295F2001DC3D8 = {
+						CreatedOnToolsVersion = 14.1;
+					};
 					CA82C79F2A52928600FEE665 = {
 						CreatedOnToolsVersion = 14.1;
 					};
@@ -110,22 +140,50 @@
 			projectRoot = "";
 			targets = (
 				CA82C79F2A52928600FEE665 /* DSA - Struct */,
+				CA5DC9022A5295F2001DC3D8 /* pointer */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CA5DC8FF2A5295F2001DC3D8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CA82C79C2A52928600FEE665 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA82C7A42A52928600FEE665 /* main.cpp in Sources */,
+				CA82C7AD2A5292ED00FEE665 /* struct.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		CA5DC9052A5295F2001DC3D8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37226JRVST;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CA5DC9062A5295F2001DC3D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 37226JRVST;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		CA82C7A52A52928600FEE665 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -254,6 +312,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CA5DC9072A5295F2001DC3D8 /* Build configuration list for PBXNativeTarget "pointer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA5DC9052A5295F2001DC3D8 /* Debug */,
+				CA5DC9062A5295F2001DC3D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CA82C79B2A52928600FEE665 /* Build configuration list for PBXProject "DSA - Struct" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
