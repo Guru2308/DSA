@@ -22,7 +22,7 @@ int changeL(struct Rect *r, int l){
 }
 
 int main(){
-    struct Rect r;
+    Rect r;
     init(&r,10,5);
     cout<<area(&r)<<endl;
     changeL(&r, 20);
