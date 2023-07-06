@@ -9,6 +9,7 @@ int * fun(int size){
 
     for(int i=0;i<size;i++){
         p[i] = i+1;
+        // cout<<p[i]<<endl;
     }
     return p;
 }
@@ -18,8 +19,8 @@ int main(){
     
     ptr = fun(sz);
 
-    for(int x;x<sz;x++)
-    cout<<ptr[x]<<endl;
-
+    for(int x=0;x<sz;x++){
+        cout<<ptr[x]<<endl;
+    }
     return 0;
 }
