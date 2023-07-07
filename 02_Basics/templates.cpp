@@ -21,7 +21,7 @@ class Arithmetic{
 
         template <class T>
         int Arithmetic<T>::add(){
-            return a+b; 
+            return a+b;
         }
 
         template <class T>
